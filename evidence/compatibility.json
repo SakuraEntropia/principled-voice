@@ -1,0 +1,11 @@
+{
+  "machine": "arm64",
+  "physical_memory_bytes": 25769803776,
+  "mps_available_in_unrestricted_process": true,
+  "mps_available_in_restricted_process": false,
+  "cpu_real_waveform": true,
+  "mps_real_waveform": true,
+  "cuda_tested": false,
+  "parler_mps_tested": false,
+  "source": "actual hardware probe and render manifests"
+}

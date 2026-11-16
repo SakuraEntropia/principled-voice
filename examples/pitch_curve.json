@@ -1,0 +1,7 @@
+{
+  "text": "This is a temporary voice for a technical test. The light is still here.",
+  "take": "pitch_curve", "seed": 42,
+  "controls": {"pitch_curve": {"keys": [
+    {"time": 0, "value": -2}, {"time": 0.5, "value": 0},
+    {"time": 1, "value": 3}], "interpolation": "smooth"}}
+}

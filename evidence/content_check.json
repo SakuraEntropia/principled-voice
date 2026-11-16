@@ -1,0 +1,62 @@
+{
+  "evaluator": "Systran/faster-whisper-tiny.en",
+  "scope": "single ASR model; not listening validation",
+  "cases": [
+    {
+      "file": "outputs/principled_voice/renders/m1_controls_v2/baseline/voice.wav",
+      "reference": "This is a temporary voice for a technical test. The light is still here.",
+      "transcript": "This is a temporary voice for a technical test. The light is still here.",
+      "word_error_rate": 0.0
+    },
+    {
+      "file": "outputs/principled_voice/renders/m1_controls_v2/pitch_up/voice.wav",
+      "reference": "This is a temporary voice for a technical test. The light is still here.",
+      "transcript": "This is a temporary voice for a technical test. The light is still here.",
+      "word_error_rate": 0.0
+    },
+    {
+      "file": "outputs/principled_voice/renders/m1_controls_v2/faster/voice.wav",
+      "reference": "This is a temporary voice for a technical test. The light is still here.",
+      "transcript": "This is a temporary voice for a technical test. The light is still here.",
+      "word_error_rate": 0.0
+    },
+    {
+      "file": "outputs/principled_voice/renders/m1_controls_v2/aroused/voice.wav",
+      "reference": "This is a temporary voice for a technical test. The light is still here.",
+      "transcript": "This is a temporary voice for a technical test. The light is still here.",
+      "word_error_rate": 0.0
+    },
+    {
+      "file": "outputs/principled_voice/renders/kv_sampled/baseline.wav",
+      "reference": "The light is still here.",
+      "transcript": "The light is still here.",
+      "word_error_rate": 0.0
+    },
+    {
+      "file": "outputs/principled_voice/renders/kv_sampled/native_target.wav",
+      "reference": "The light is still here.",
+      "transcript": "But why it is still here?",
+      "word_error_rate": 0.6
+    },
+    {
+      "file": "outputs/principled_voice/renders/kv_sampled/k_only.wav",
+      "reference": "The light is still here.",
+      "transcript": "The light is still here.",
+      "word_error_rate": 0.0
+    },
+    {
+      "file": "outputs/principled_voice/renders/kv_sampled/v_only.wav",
+      "reference": "The light is still here.",
+      "transcript": "The light is still here.",
+      "word_error_rate": 0.0
+    },
+    {
+      "file": "outputs/principled_voice/renders/kv_sampled/cache_swap.wav",
+      "reference": "The light is still here.",
+      "transcript": "The light is still here.",
+      "word_error_rate": 0.0
+    }
+  ],
+  "revision": "0d3d19a32d3338f10357c0889762bd8d64bbdeba",
+  "model_sha256": "1a5afae06a4db91c975c9a9d78be5cc110ee4ea022ad57d55492e4550e936b2a"
+}

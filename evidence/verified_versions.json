@@ -1,0 +1,45 @@
+{
+  "python": "3.12.14",
+  "packages": [
+    {
+      "name": "torch",
+      "version": "2.15.0"
+    },
+    {
+      "name": "transformers",
+      "version": "4.46.1"
+    },
+    {
+      "name": "kokoro",
+      "version": "0.9.4"
+    },
+    {
+      "name": "misaki",
+      "version": "0.9.4"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.5"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1"
+    },
+    {
+      "name": "parler-tts",
+      "version": "0.2.2"
+    },
+    {
+      "name": "faster-whisper",
+      "version": "1.2.1"
+    },
+    {
+      "name": "av",
+      "version": "19.0.2"
+    },
+    {
+      "name": "ctranslate2",
+      "version": "4.9.0"
+    }
+  ]
+}

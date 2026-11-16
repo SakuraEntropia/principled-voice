@@ -1,0 +1,4 @@
+{
+  "exit_code": 2,
+  "stdout": "{\n  \"status\": \"constraint_violation\",\n  \"output\": \"renders/cli_strict_lock\",\n  \"rtf\": 0.14163877904031646\n}\n"
+}

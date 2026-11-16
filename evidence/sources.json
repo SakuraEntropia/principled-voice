@@ -1,0 +1,263 @@
+[
+  {
+    "name": "fine_grained_style",
+    "url": "https://arxiv.org/html/2605.27376v1",
+    "retrieved_utc": "2026-11-16T14:19:17.305084+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/html/2605.27376v1",
+    "sha256": "7953ee9d276e9e50e8687b93f29689f927830e5d380018f2bb655d43504aa3c9",
+    "bytes": 251169
+  },
+  {
+    "name": "emotion_circuit",
+    "url": "https://arxiv.org/html/2610.05080v1",
+    "retrieved_utc": "2026-11-16T14:19:17.305359+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/html/2610.05080v1",
+    "sha256": "03286d7f2f00b9f9028c68fe4a670c0077449e21abe151bc464edc8084b6c32c",
+    "bytes": 269969
+  },
+  {
+    "name": "ctrlspeech_paper",
+    "url": "https://arxiv.org/html/2608.08362v1",
+    "retrieved_utc": "2026-11-16T14:19:17.305440+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/html/2608.08362v1",
+    "sha256": "b431e8328abab336feb9884bcfd1f0362a6a2e8be9d82e8736ecb8e640244904",
+    "bytes": 144445
+  },
+  {
+    "name": "ctrl_p",
+    "url": "https://arxiv.org/abs/2106.08352",
+    "retrieved_utc": "2026-11-16T14:19:17.305487+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/2106.08352",
+    "sha256": "336f3c7aad69e7448c4e3efdfdbe42fc1f00ca7ef251e917ea4882d7b3b81041",
+    "bytes": 43219
+  },
+  {
+    "name": "fastspeech2",
+    "url": "https://arxiv.org/abs/2006.04558",
+    "retrieved_utc": "2026-11-16T14:19:17.589925+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/2006.04558",
+    "sha256": "ca087c2ae1c8052123dda9506b1c47050a71b083b0c9afc631cdc5da60bca832",
+    "bytes": 45390
+  },
+  {
+    "name": "fastspeech2_author_site",
+    "url": "https://speechresearch.github.io/fastspeech2/",
+    "retrieved_utc": "2026-11-16T14:19:17.607967+00:00",
+    "status": 200,
+    "resolved_url": "https://speechresearch.github.io/fastspeech2/",
+    "sha256": "c70c68ce94ca3c109073829008ed2758adf8c734a9685ca1d05afd866981cdf5",
+    "bytes": 19933
+  },
+  {
+    "name": "sparc",
+    "url": "https://arxiv.org/abs/2406.12998",
+    "retrieved_utc": "2026-11-16T14:19:17.626814+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/2406.12998",
+    "sha256": "0ae4d5948ac4a40f099ecf9b060c4ea03ddd1b9faf0468364b01e796dc6486fb",
+    "bytes": 43944
+  },
+  {
+    "name": "ddsp",
+    "url": "https://arxiv.org/abs/2001.04643",
+    "retrieved_utc": "2026-11-16T14:19:17.643732+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/2001.04643",
+    "sha256": "20759f4517af516fb10c2fddccbacbc8a585bcb3413ebe881089160a1746e7aa",
+    "bytes": 44184
+  },
+  {
+    "name": "nsf",
+    "url": "https://arxiv.org/abs/1904.12088",
+    "retrieved_utc": "2026-11-16T14:19:17.859187+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/1904.12088",
+    "sha256": "dd8d7ddd2a82e6cc597a455976b30756ba390f7da1f756e225794bf0486a6be4",
+    "bytes": 43164
+  },
+  {
+    "name": "hypernetworks",
+    "url": "https://arxiv.org/abs/1609.09106",
+    "retrieved_utc": "2026-11-16T14:19:17.882812+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/1609.09106",
+    "sha256": "6e51966420f4a90473e7434f0aaeaee77994558512cf0a929756a4f2a987d1ac",
+    "bytes": 41722
+  },
+  {
+    "name": "film",
+    "url": "https://arxiv.org/abs/1709.07871",
+    "retrieved_utc": "2026-11-16T14:19:17.904321+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/1709.07871",
+    "sha256": "e9a03c00466f1edca4f5454a1be9b8665fa6e076dfdd221c309a0543703e0677",
+    "bytes": 41632
+  },
+  {
+    "name": "activation_steering",
+    "url": "https://arxiv.org/abs/2308.10248",
+    "retrieved_utc": "2026-11-16T14:19:17.940881+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/2308.10248",
+    "sha256": "3e337a818b6fa403010e2a2d615afdbf2fea5c4a68fbf75c51e98aded6fe78d7",
+    "bytes": 42215
+  },
+  {
+    "name": "activation_patching",
+    "url": "https://arxiv.org/abs/2404.15255",
+    "retrieved_utc": "2026-11-16T14:19:17.974714+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/2404.15255",
+    "sha256": "beea5ba2b82141101f001e692bb0f49dc63645519e791f9b1de523d96f07ba08",
+    "bytes": 38810
+  },
+  {
+    "name": "indextts2",
+    "url": "https://arxiv.org/abs/2506.21619",
+    "retrieved_utc": "2026-11-16T14:19:18.035093+00:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/abs/2506.21619",
+    "sha256": "16ce8012e6f7cf3c016d762842c243009c23a26280a3a01bb8e26d1865c307d4",
+    "bytes": 44172
+  },
+  {
+    "name": "parler_repo",
+    "url": "https://api.github.com/repos/huggingface/parler-tts",
+    "retrieved_utc": "2026-11-16T14:19:18.072719+00:00",
+    "status": 200,
+    "resolved_url": "https://api.github.com/repos/huggingface/parler-tts",
+    "sha256": "d7237fb3ea70242be7bfe7ef1810cdc192cfe2215113ee6e35f0ce44ca8cb45a",
+    "bytes": 6494
+  },
+  {
+    "name": "kokoro_repo",
+    "url": "https://api.github.com/repos/hexgrad/kokoro",
+    "retrieved_utc": "2026-11-16T14:19:18.130681+00:00",
+    "status": 200,
+    "resolved_url": "https://api.github.com/repos/hexgrad/kokoro",
+    "sha256": "a5dcca31d3997ec10170fc296674e4b41891ed077906cd01a4f2ffd9c0311661",
+    "bytes": 5032
+  },
+  {
+    "name": "ctrlspeech_repo",
+    "url": "https://api.github.com/repos/zszheng147/ctrlspeech",
+    "retrieved_utc": "2026-11-16T14:19:18.533337+00:00",
+    "status": 200,
+    "resolved_url": "https://api.github.com/repos/zszheng147/ctrlspeech",
+    "sha256": "80aea5701dfa13f5f72ec6d613379810cecf5b9baab5946a87e610ce1f3f278d",
+    "bytes": 5315
+  },
+  {
+    "name": "sparc_repo",
+    "url": "https://api.github.com/repos/Berkeley-Speech-Group/Speech-Articulatory-Coding",
+    "retrieved_utc": "2026-11-16T14:19:18.533443+00:00",
+    "status": 200,
+    "resolved_url": "https://api.github.com/repos/Berkeley-Speech-Group/Speech-Articulatory-Coding",
+    "sha256": "9cb70825aede0e34f20543ccf2393054a4fd1e654525578ff23ac10a1d03ba4b",
+    "bytes": 7625
+  },
+  {
+    "name": "ctrlspeech_license",
+    "url": "https://raw.githubusercontent.com/zszheng147/ctrlspeech/main/LICENSE",
+    "retrieved_utc": "2026-11-16T14:19:18.699534+00:00",
+    "status": 200,
+    "resolved_url": "https://raw.githubusercontent.com/zszheng147/ctrlspeech/main/LICENSE",
+    "sha256": "5b0fefb187161d09b849772c1379258ee31b42f4f28348ff79285134cb6ed25d",
+    "bytes": 1404
+  },
+  {
+    "name": "ctrlspeech_weights",
+    "url": "https://huggingface.co/zhisheng01/CtrlSpeech/raw/main/README.md",
+    "retrieved_utc": "2026-11-16T14:19:18.845707+00:00",
+    "status": 200,
+    "resolved_url": "https://huggingface.co/zhisheng01/CtrlSpeech/raw/main/README.md",
+    "sha256": "1543e8d23760514a4290c58cf1689b829e4f9f2bd2326f718e94f7650a5b4014",
+    "bytes": 2532
+  },
+  {
+    "name": "indextts_license",
+    "url": "https://raw.githubusercontent.com/index-tts/index-tts/main/LICENSE",
+    "retrieved_utc": "2026-11-16T14:19:18.904653+00:00",
+    "status": 200,
+    "resolved_url": "https://raw.githubusercontent.com/index-tts/index-tts/main/LICENSE",
+    "sha256": "53875532237e0a97b17a41721556ff57e93193fc566e48c3a0febe6e35bb5343",
+    "bytes": 10554
+  },
+  {
+    "name": "kokoro_license",
+    "url": "https://raw.githubusercontent.com/hexgrad/kokoro/main/LICENSE",
+    "retrieved_utc": "2026-11-16T14:19:19.129968+00:00",
+    "status": 200,
+    "resolved_url": "https://raw.githubusercontent.com/hexgrad/kokoro/main/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bytes": 11357
+  },
+  {
+    "name": "kokoro_card",
+    "url": "https://huggingface.co/hexgrad/Kokoro-82M/raw/f3ff3571791e39611d31c381e3a41a3af07b4987/README.md",
+    "retrieved_utc": "2026-11-16T14:19:19.185856+00:00",
+    "status": 200,
+    "resolved_url": "https://huggingface.co/hexgrad/Kokoro-82M/raw/f3ff3571791e39611d31c381e3a41a3af07b4987/README.md",
+    "sha256": "91dcabced89db6f109b8786642f50402d3ee87450e8189589b6f85520e7f4d78",
+    "bytes": 6348
+  },
+  {
+    "name": "kokoro_voices",
+    "url": "https://huggingface.co/hexgrad/Kokoro-82M/raw/f3ff3571791e39611d31c381e3a41a3af07b4987/VOICES.md",
+    "retrieved_utc": "2026-11-16T14:19:19.389377+00:00",
+    "status": 200,
+    "resolved_url": "https://huggingface.co/hexgrad/Kokoro-82M/raw/f3ff3571791e39611d31c381e3a41a3af07b4987/VOICES.md",
+    "sha256": "ec7e4941ad7e194af61e3455928528a9ff5360c7c505e412efab27d6a69ea106",
+    "bytes": 7625
+  },
+  {
+    "name": "parler_card",
+    "url": "https://huggingface.co/parler-tts/parler-tts-tiny-v1/raw/fe1bd939bb05464d39a76e20cf8a35d4e6885571/README.md",
+    "retrieved_utc": "2026-11-16T14:19:19.444334+00:00",
+    "status": 200,
+    "resolved_url": "https://huggingface.co/parler-tts/parler-tts-tiny-v1/raw/fe1bd939bb05464d39a76e20cf8a35d4e6885571/README.md",
+    "sha256": "b8b57a3d49a519c2e5215f79897e5968d18f92fffef617d45c263a090489eb93",
+    "bytes": 6766
+  },
+  {
+    "name": "parler_license",
+    "url": "https://raw.githubusercontent.com/huggingface/parler-tts/d108732cd57788ec86bc857d99a6cabd66663d68/LICENSE",
+    "retrieved_utc": "2026-11-16T14:19:19.642724+00:00",
+    "status": 200,
+    "resolved_url": "https://raw.githubusercontent.com/huggingface/parler-tts/d108732cd57788ec86bc857d99a6cabd66663d68/LICENSE",
+    "sha256": "5ee13882fce0975f0ad3c3d5c2042af4896c2a669be2d6df5b3d256811267c85",
+    "bytes": 11359
+  },
+  {
+    "name": "nsf_license",
+    "url": "https://raw.githubusercontent.com/nii-yamagishilab/project-NN-Pytorch-scripts/master/LICENSE",
+    "retrieved_utc": "2026-11-16T14:19:19.713470+00:00",
+    "status": 200,
+    "resolved_url": "https://raw.githubusercontent.com/nii-yamagishilab/project-NN-Pytorch-scripts/master/LICENSE",
+    "sha256": "367bd3b9c7b41161de9013d18b44610861ca36c238426161daaffa6d57b96b64",
+    "bytes": 1551
+  },
+  {
+    "name": "ddsp_license",
+    "url": "https://raw.githubusercontent.com/magenta/ddsp/main/LICENSE",
+    "retrieved_utc": "2026-11-16T14:19:19.718179+00:00",
+    "status": 200,
+    "resolved_url": "https://raw.githubusercontent.com/magenta/ddsp/main/LICENSE",
+    "sha256": "e841bcaa1b323bed2869e23f9832dc64c761d48987c4532ccbe0528d17186757",
+    "bytes": 11384
+  },
+  {
+    "name": "pytorch_mps",
+    "url": "https://docs.pytorch.org/docs/stable/notes/mps.html",
+    "retrieved_utc": "2026-11-16T14:19:19.935202+00:00",
+    "status": 200,
+    "resolved_url": "https://docs.pytorch.org/docs/stable/notes/mps.html",
+    "sha256": "ae084efa96d0fa5b625208167427b2399859125f7b19a52ecac73ca259920a3d",
+    "bytes": 1852
+  }
+]

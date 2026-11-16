@@ -1,0 +1,5 @@
+{
+  "text": "This is a temporary voice for a technical test. The light is still here.",
+  "take": "strict_lock",
+  "locks": [{"parameter": "f0_hz", "target": 200, "tolerance": 0.01, "strength": "hard"}]
+}

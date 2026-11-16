@@ -1,0 +1,10 @@
+schema_version: 1
+status: temporary_voice
+label: Temporary Voice / af_heart
+backend: kokoro
+model: hexgrad/Kokoro-82M
+revision: f3ff3571791e39611d31c381e3a41a3af07b4987
+voice: af_heart
+test_frontend: en-us
+character_identity_approved: false
+production_approved: false
