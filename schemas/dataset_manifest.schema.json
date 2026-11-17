@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://principled-voice.local/schemas/dataset_manifest.schema.json",
+  "title": "Principled Voice local corpus manifest line",
+  "description": "One JSON object per line in data/manifest.jsonl. Describes one recording. Fields marked null must be filled by the data provider or a human reviewer; the intake tooling must never infer speaker, language, transcript, emotion or license terms from audio.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "clip_id",
+    "file",
+    "speaker_id",
+    "session_id",
+    "script_id",
+    "language",
+    "usage_status"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "clip_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$",
+      "description": "Stable local identifier; must not encode a real name."
+    },
+    "file": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(^|/)\\.\\.(/|$)).+$",
+      "description": "Path relative to the data root. Absolute paths and '..' are rejected."
+    },
+    "sha256": {
+      "type": ["string", "null"],
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Canonical file hash computed by inventory; null before intake."
+    },
+    "duration_s": { "type": ["number", "null"], "minimum": 0 },
+    "sample_rate": { "type": ["integer", "null"], "minimum": 1 },
+    "channels": { "type": ["integer", "null"], "minimum": 1 },
+    "speaker_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "description": "Pseudonymous group key. Must be stable across sessions of the same person."
+    },
+    "session_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "description": "Recording session/room/day group; prevents splitting one session across splits."
+    },
+    "script_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "description": "Prompt/text group; prevents the same script leaking across splits."
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[A-Za-z]{2,3}([-_][A-Za-z0-9]{2,8})*$",
+      "description": "BCP-47-like tag as declared by the provider, e.g. zh-CN or en-US. No inference."
+    },
+    "transcript": { "type": ["string", "null"] },
+    "transcript_status": {
+      "enum": ["human_verified", "provided_unverified", "asr_draft", null],
+      "description": "ASR drafts are not ground truth and do not clear a clip."
+    },
+    "speaker_role": {
+      "enum": ["target_speaker", "other_speaker", "unknown"],
+      "description": "Who is speaking. Provided by the rights holder, not guessed from acoustics."
+    },
+    "license_id": { "type": ["string", "null"] },
+    "authorization_id": { "type": ["string", "null"] },
+    "usage_status": {
+      "enum": ["cleared", "pending", "rejected", "unknown"],
+      "description": "Only 'cleared' may enter a training set, and only after both license and authorization references validate."
+    },
+    "permitted_uses": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "recording",
+          "model_training",
+          "synthesis",
+          "voice_cloning",
+          "commercial",
+          "broadcast",
+          "animation_production",
+          "redistribution"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "quality": {
+      "type": ["object", "null"],
+      "description": "Objective measurements and human review notes, filled after files arrive. No threshold is defined until the real distribution is inspected.",
+      "additionalProperties": true,
+      "properties": {
+        "measured_on": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "clipping_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+        "silence_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+        "snr_db_estimate": { "type": "number" },
+        "loudness_lufs": { "type": "number" },
+        "reviewer": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "split": {
+      "enum": ["train", "dev", "test", null],
+      "description": "Assigned by the deterministic grouping planner, not by hand."
+    },
+    "notes": { "type": "string" }
+  }
+}

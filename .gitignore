@@ -10,3 +10,6 @@ build/
 dist/
 .cache/
 
+# Local, private corpora and signed release documents: never commit or upload.
+data/
+

@@ -1,0 +1,99 @@
+{
+  "recheck_date": "2026-11-17",
+  "scope": "initialization, upstream re-verification and data-intake preparation only; no training, no corpus, no identity/emotion/quality claim",
+  "base_commit": "19b15a0dfe86eae23eb243b10d585b9ff8855855",
+  "machine": {
+    "model": "Apple M5",
+    "arch": "arm64",
+    "cpu_cores": 10,
+    "physical_memory_bytes": 25769803776,
+    "os": "macOS 27.2 (build 26B5101f)"
+  },
+  "toolchain": {
+    "uv": "0.12.19",
+    "python": "3.12.14",
+    "torch": "2.15.0",
+    "mps_available": true,
+    "cuda_available": false,
+    "install": "uv sync --locked --extra dev"
+  },
+  "models": {
+    "kokoro": {
+      "repo": "hexgrad/Kokoro-82M",
+      "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "files_sha256": {
+        "config.json": "5abb01e2403b072bf03d04fde160443e209d7a0dad49a423be15196b9b43c17f",
+        "kokoro-v1_0.pth": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+        "voices/af_heart.pt": "0ab5709b8ffab19bfd849cd11d98f75b60af7733253ad0d67b12382a102cb4ff"
+      }
+    },
+    "parler_tiny": "not downloaded; KV pilot not re-run",
+    "faster_whisper_tiny_en": "not installed; content check not re-run"
+  },
+  "tests": {
+    "command": "PV_MODEL_DIR=\"$PWD/models/kokoro\" uv run --locked --extra dev pytest -q",
+    "result": "21 passed, 2 warnings",
+    "duration_s": 4.76,
+    "duration_first_run_s": 5.39,
+    "notes": "3 integration tests used the frozen Kokoro weights; the 2 warnings are upstream torch LSTM/weight_norm deprecations"
+  },
+  "smoke_render": {
+    "project": "examples/baseline.json",
+    "device": "cpu",
+    "output": "renders/smoke_baseline",
+    "status": "rendered",
+    "duration_s": 4.675,
+    "sample_count": 112200,
+    "expected_samples": 112200,
+    "f0_median_hz": 199.6902034699514,
+    "rms_dbfs": -26.29527410947047,
+    "audio_samples_sha256": "fae50e9b78f2486426887153afa57fcfd30e99b2e633dc4db2f1132d27205c34",
+    "real_time_factor_synthesis_only": 0.11955229048168954,
+    "process_peak_rss_bytes": 1462468608,
+    "identity_status": "temporary_voice",
+    "matches_prior_table": "199.69 Hz / 4.675 s / -26.30 dBFS, i.e. the EXPERIMENTS.md baseline row reproduces"
+  },
+  "hard_lock": {
+    "project": "examples/strict_lock.json",
+    "target_hz": 200.0,
+    "tolerance_hz": 0.01,
+    "measured_median_hz": 199.6036478256964,
+    "violation_hz": 0.39635217430358693,
+    "status": "constraint_violation",
+    "exit_code": 2,
+    "scope": "median_voiced_waveform_f0_not_every_frame"
+  },
+  "device_comparison": {
+    "mps_status": "rendered",
+    "mps_repeat_identical": true,
+    "cpu_vs_mps_samples_identical": false,
+    "cpu": {"f0_median_hz": 199.6902034699514, "rms_dbfs": -26.29527410947047, "rtf": 0.11955229048168954},
+    "mps": {"f0_median_hz": 201.5346016228197, "rms_dbfs": -25.14485651278776, "rtf": 0.38831600705834035},
+    "notes": "same text/seed; single sentence; not a performance benchmark. CPU remains the canonical reproducible device; MPS is confirmed runnable but numerically device-dependent."
+  },
+  "data_intake": {
+    "corpus_received": false,
+    "local_data_root": "data/ (gitignored, empty except README)",
+    "artifacts": [
+      "docs/DATA_INTAKE.md",
+      "schemas/corpus.schema.json",
+      "schemas/dataset_manifest.schema.json",
+      "scripts/check_dataset.py"
+    ],
+    "self_test": "ok (synthetic metadata only; validates clearing rules, grouping, empty splits, duplicate hash and cross-split groups)",
+    "end_to_end_synthetic": "4 clips / 4 groups -> 2 train / 1 dev / 1 test; leakage check OK",
+    "not_run": "inventory, real validation, split plan and quality checks, because no authorized corpus exists yet"
+  },
+  "not_claimed": [
+    "Kororu identity, age, gender, language, timbre or personality",
+    "emotion control, speaker similarity, MOS, emotion accuracy or physiological measurement",
+    "content preservation of the Parler KV pilot",
+    "production approval of any take (production_approved is false in every manifest)"
+  ],
+  "blockers": [
+    "no authorized reference recordings or character language/pronunciation material",
+    "frontend supports en-us only; Chinese support not implemented",
+    "N is an uncalibrated acoustic condition, not loudness or glottal pressure; RMS hard lock is refused",
+    "Parler KV is an engineering pilot only; native_target had an ASR content error"
+  ]
+}
